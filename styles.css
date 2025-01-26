@@ -1,16 +1,74 @@
+/* styles.css */
+
+/* Global background and text settings */
 body {
-    font-family: 'Arial', sans-serif;
+    background-color: #f0e68c; /* Khaki background */
+    color: #333; /* Dark text color for better contrast */
 }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
+/* Navbar styling */
+.navbar {
+    background-color: #556b2f; /* Dark Olive Green */
 }
 
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    color: #f0e68c !important; /* Hover effect for better visibility */
+}
+
+/* Card Styling */
+.card {
+    border: 1px solid #556b2f; /* Dark Olive Green border for cards */
+}
+
+.card-title {
+    color: #556b2f;
+}
+
+.card-text {
+    color: #333;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #556b2f;
+    border-color: #556b2f;
+}
+
+.btn-primary:hover {
+    background-color: #6b8e23;
+    border-color: #6b8e23;
+}
+
+/* Footer Styling */
 footer {
-    background-color: #f8f9fa;
+    background-color: #556b2f;
+    color: white;
     padding: 10px 0;
-    position: sticky;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Form styling */
+.form-control {
+    border: 1px solid #556b2f; /* Dark Olive Green border for form inputs */
+}
+
+.form-control:focus {
+    border-color: #6b8e23; /* Lighter green on focus */
+    box-shadow: 0 0 5px rgba(107, 142, 35, 0.5);
+}
+
+/* Sticky footer */
+.sticky-footer {
+    position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
 }
